@@ -1,0 +1,4 @@
+:global secrets {
+  "adminEmail"=""
+  "pingPongHost"=""
+}

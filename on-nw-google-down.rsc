@@ -1,0 +1,1 @@
+/tool netwatch enable [/tool netwatch find comment~":nw-opendns"]

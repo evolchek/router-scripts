@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#scp -r ./ router.lan:/pub/scripts/
+
+lftp -c 'open sftp://router.lan/pub/scripts && mirror -R --delete'
