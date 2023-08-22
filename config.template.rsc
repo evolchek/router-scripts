@@ -1,4 +1,4 @@
-:global secrets {
+:global config {
   "adminEmail"=""
   "pingPongHost"=""
 }

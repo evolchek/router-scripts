@@ -1,4 +1,4 @@
-/import pub/scripts/secrets.rsc
-:global secrets
+/import pub/scripts/config.rsc
+:global config
 
-/tool e-mail send to=($secrets->"adminEmail") subject="[router.lan] ping-pong down" body=(($secrets->"pingPongHost") . " went down")
+/tool e-mail send to=($config->"adminEmail") subject="[router.lan] ping-pong down" body=(($config->"pingPongHost") . " went down")

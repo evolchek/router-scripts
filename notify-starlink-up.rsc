@@ -1,4 +1,4 @@
-/import pub/scripts/secrets.rsc
-:global secrets
+/import pub/scripts/config.rsc
+:global config
 
-/tool e-mail send to=($secrets->"adminEmail") subject="[router.lan] Starlink up" body="Starlink is back up"
+/tool e-mail send to=($config->"adminEmail") subject="[router.lan] Starlink up" body="Starlink is back up"
