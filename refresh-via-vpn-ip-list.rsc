@@ -7,9 +7,9 @@
     /ip firewall address-list {
         :local records [find (address=$ip && list=$listName)]
         :if ([:len $records]=0) do={
-            add list=$listName address=$ip timeout=1m40s comment=$server
+            add list=$listName address=$ip timeout=10m comment=$server
         } else={
-            set $records timeout=1m40s
+            set $records timeout=10m
         }
     }
 }
